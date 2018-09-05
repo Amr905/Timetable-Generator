@@ -1,0 +1,7 @@
+c:\users\amr.morsy\documents\visual studio 2017\Projects\Time Table Generator\Time Table Generator\obj\Debug\Time Table Generator.csprojAssemblyReference.cache
+c:\users\amr.morsy\documents\visual studio 2017\Projects\Time Table Generator\Time Table Generator\obj\Debug\Time Table Generator.csproj.CoreCompileInputs.cache
+c:\users\amr.morsy\documents\visual studio 2017\Projects\Time Table Generator\Time Table Generator\bin\Debug\Time Table Generator.exe.config
+c:\users\amr.morsy\documents\visual studio 2017\Projects\Time Table Generator\Time Table Generator\bin\Debug\Time Table Generator.exe
+c:\users\amr.morsy\documents\visual studio 2017\Projects\Time Table Generator\Time Table Generator\bin\Debug\Time Table Generator.pdb
+c:\users\amr.morsy\documents\visual studio 2017\Projects\Time Table Generator\Time Table Generator\obj\Debug\Time Table Generator.exe
+c:\users\amr.morsy\documents\visual studio 2017\Projects\Time Table Generator\Time Table Generator\obj\Debug\Time Table Generator.pdb
