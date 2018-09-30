@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Time_Table_Generator.RandomizerNamespace;
 
 namespace Time_Table_Generator.model
 {
@@ -66,9 +67,9 @@ namespace Time_Table_Generator.model
          */
         public int getRandomProfessorId()
         {
-            Random random = new Random();
-            //added 1 change from java from Math.Random();
-            int professorId = professorIds[(int)(professorIds.Length * random.NextDouble())];
+            
+            
+            int professorId = professorIds[(int)(professorIds.Length * Randomizer.NextDouble())];
             return professorId;
         }
     }

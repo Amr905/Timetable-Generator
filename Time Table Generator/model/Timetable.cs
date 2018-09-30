@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Time_Table_Generator.RandomizerNamespace;
 
 namespace Time_Table_Generator.model
 {
@@ -207,9 +208,8 @@ namespace Time_Table_Generator.model
          */
         public Room getRandomRoom()
         {
-            Random random = new Random();
             Object[] roomsArray = this.rooms.Values.ToArray();
-            Room room = (Room)roomsArray[(int)(roomsArray.Length * random.NextDouble())];
+            Room room = (Room)roomsArray[(int)(roomsArray.Length * Randomizer.NextDouble())];
             return room;
         }
 
@@ -288,9 +288,8 @@ namespace Time_Table_Generator.model
          */
         public Timeslot getRandomTimeslot()
         {
-            Random random = new Random();
             Object[] timeslotArray = this.timeslots.Values.ToArray();
-            Timeslot timeslot = (Timeslot)timeslotArray[(int)(timeslotArray.Length * random.NextDouble())];
+            Timeslot timeslot = (Timeslot)timeslotArray[(int)(timeslotArray.Length * Randomizer.NextDouble())];
             return timeslot;
         }
 

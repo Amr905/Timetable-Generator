@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Time_Table_Generator.model;
+using Time_Table_Generator.RandomizerNamespace;
 namespace Time_Table_Generator
 {
     public class GeneticAlgorithm
@@ -162,8 +163,8 @@ namespace Time_Table_Generator
                     if (populationIndex > this.elitismCount)
                     {
                         // Does this gene need mutation?
-                        Random random = new Random();
-                        if (this.mutationRate > random.NextDouble())
+                        
+                        if (this.mutationRate > Randomizer.NextDouble())
                         {
                             // Swap for new gene
                             individual.setGene(geneIndex, randomIndividual.getGene(geneIndex));
@@ -196,8 +197,8 @@ namespace Time_Table_Generator
                 Individual parent1 = population.getFittest(populationIndex);
 
                 // Apply crossover to this individual?
-                Random random = new Random();
-                if (this.crossoverRate > random.NextDouble() && populationIndex >= this.elitismCount)
+                
+                if (this.crossoverRate > Randomizer.NextDouble() && populationIndex >= this.elitismCount)
                 {
                     // Initialize offspring
                     Individual offspring = new Individual(parent1.getChromosomeLength());
@@ -209,7 +210,7 @@ namespace Time_Table_Generator
                     for (int geneIndex = 0; geneIndex < parent1.getChromosomeLength(); geneIndex++)
                     {
                         // Use half of parent1's genes and half of parent2's genes
-                        if (0.5 > random.NextDouble())
+                        if (0.5 > Randomizer.NextDouble())
                         {
                             offspring.setGene(geneIndex, parent1.getGene(geneIndex));
                         }

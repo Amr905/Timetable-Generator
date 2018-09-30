@@ -8,9 +8,10 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Time_Table_Generator</RootNamespace>
     <AssemblyName>Time Table Generator</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -52,6 +53,7 @@
     <Compile Include="model\Room.cs" />
     <Compile Include="model\TimeSlot.cs" />
     <Compile Include="model\Timetable.cs" />
+    <Compile Include="RandomDoubleNamespace\RandomDouble.cs" />
     <Compile Include="TimetableGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

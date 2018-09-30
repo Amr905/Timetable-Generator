@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Time_Table_Generator.RandomizerNamespace;
 
 namespace Time_Table_Generator.model
 {
@@ -185,10 +186,10 @@ namespace Time_Table_Generator.model
          */
         public void shuffle()
         {
-            Random random = new Random();
+            
             for (int i = population.Length - 1; i > 0; i--)
             {
-                int index = random.Next(i + 1);
+                int index = Randomizer.Next(i + 1);
                 Individual a = population[index];
                 population[index] = population[i];
                 population[i] = a;
