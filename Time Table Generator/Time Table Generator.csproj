@@ -53,7 +53,7 @@
     <Compile Include="model\Room.cs" />
     <Compile Include="model\TimeSlot.cs" />
     <Compile Include="model\Timetable.cs" />
-    <Compile Include="RandomDoubleNamespace\RandomDouble.cs" />
+    <Compile Include="RandomizerNamespace\Randomizer.cs" />
     <Compile Include="TimetableGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
